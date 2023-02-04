@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-tab-links { 
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 20vh 2vh 10vh;
+
+}
+.mat-card-actions-align-end{
+  align-items: center;
+}
+.search mat-form-field{
+    width: 80%;
+}

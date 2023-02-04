@@ -1,0 +1,35 @@
+.mat-card-content{
+    display: flex;
+}
+.img-desc{
+    padding: 10px;
+}
+.mat-card{
+    padding: 5px;
+    
+}
+.read-more{
+font-weight: 500;
+color: blue;
+}
+.act-bar{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+}
+.act-bar .act-item{
+    float: right;
+    margin-left: 3px;
+}
+.img-desc .title{
+            margin-bottom: 0;
+        }
+        .img-desc .auth-info{
+            margin-bottom: 0;
+        }
+    
+   
+
+
+  
+

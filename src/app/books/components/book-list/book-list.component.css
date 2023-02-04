@@ -1,0 +1,20 @@
+.fx-contanier{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fx-items{
+    display: flex;;
+    flex-direction: column;
+    justify-content: space-around;
+    width:60%;
+}
+.fx-item{
+    margin-bottom: 7px;
+}
+.search{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
