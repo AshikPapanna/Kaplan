@@ -23,6 +23,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Technical details:
+    * Used Lazy loading module.
+    * Created custom pipe for filter.
+    * Ngrx for state management.
+    * Angular material for UI components.
+    * Jasmine for unit testing.
+    * Added snack bar component to display error.
+
 ## Screens
 
 Below is the image of list page which display all the books.
@@ -41,16 +49,8 @@ Once you added books to favorite list navigate to favorite screen to see the fav
 ![plot](./src/assets/images/AfterFavorite.png)
 
 You can search the books based on book title in both the pages.
+
 ![plot](./src/assets/images/Search.png)
-
-
-Technical details:
-Used Lazy loading module.
-Created custom pipe for filter.
-Ngrx for state management.
-Angular material for UI components.
-Jasmine for unit testing.
-Added snack bar component to display error.
 
 Below is the screen shot of code coverage report.
 ![plot](./src/assets/images/codecov.png)
