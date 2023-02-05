@@ -50,6 +50,7 @@ Created custom pipe for filter.
 Ngrx for state management.
 Angular material for UI components.
 Jasmine for unit testing.
+Added snack bar component to display error.
 
 Below is the screen shot of code coverage report.
 ![plot](./src/assets/images/codecov.png)
