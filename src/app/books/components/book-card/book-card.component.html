@@ -15,7 +15,7 @@
            <p>
             {{getShortDescription(volumeInfo.description)}}
             <ng-container *ngIf="displayEnableMore">
-                <a class="read-more" [routerLink]="">Read more...</a>
+                <a class="read-more" [routerLink]="['../',book.id,'details']">Read more...</a>
             </ng-container>
            
            </p>
