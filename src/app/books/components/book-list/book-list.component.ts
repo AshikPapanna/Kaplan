@@ -19,12 +19,13 @@ export class BookListComponent implements OnInit,OnDestroy {
     
   }
   ngOnDestroy(): void {
-    this.booksSubscription$.unsubscribe()
+    if(this.booksSubscription$)this.booksSubscription$.unsubscribe()
   }
 
   ngOnInit(): void {
+    if(this.books) this.booksSubscription$ = this.books.subscribe((x:any)=>this.allBooks=x);
     
-    this.booksSubscription$ = this.books.subscribe((x:any)=>this.allBooks=x);
+   
   }
 
 }

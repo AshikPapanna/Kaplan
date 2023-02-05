@@ -16,6 +16,7 @@ import { addFavorite, removeFavorite } from '../../book-store/actions'
 export class BookCardComponent implements OnInit, OnChanges {
   volumeInfo: any
   salesInfo: any
+  test:any;
   @Input() book: any
   displayEnableMore = false
 
@@ -37,6 +38,7 @@ export class BookCardComponent implements OnInit, OnChanges {
     }
   }
   public toggleFavorite(t: any, b: any) {
+    this.test="sdasd";
   if (t.checked) {
       this.store.dispatch(addFavorite({ book: b }))
     } else {

@@ -14,8 +14,5 @@ export class BooksComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(BookActions.getBooks())
   }
-  onToggle(){
-   
-  }
 
 }
