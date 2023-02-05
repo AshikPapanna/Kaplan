@@ -20,6 +20,7 @@ import { createSelector, createFeatureSelector } from '@ngrx/store';
 export interface BookFeatureState {
   books: any;
   count:number;
+  errorMessages:any[]
 }
  
 export interface AppState {
@@ -48,4 +49,9 @@ export const getCount=createSelector(
 export const getFavoriteCount=createSelector(
   selectFavoriteBooks,
   (state: any[]) => state.length
+)
+
+export const getErrorMessage=createSelector(
+  selectFeature,
+  (state: BookFeatureState) => state.errorMessages
 )

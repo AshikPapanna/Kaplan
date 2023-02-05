@@ -5,12 +5,14 @@ export const bookFeatureKey = 'bookFeatureKey'
 
 export interface State {
   books: any[],
-  count:number
+  count:number,
+  errorMessages:any[]
  
 }
 export const initialState: State = {
   books: [],
-  count:0
+  count:0,
+  errorMessages:[]
 
 }
 export const bookReducer = createReducer(
@@ -42,5 +44,15 @@ export const bookReducer = createReducer(
       }
       return x
     }),
+  })),
+  on(BooksAction.addError, (state, {message,status }) => ({
+    ...state,
+    errorMessages: [...state.errorMessages,message+ " "+ status]
+      
+  })),
+  on(BooksAction.removeError, (state) => ({
+    ...state,
+    errorMessages: []
+      
   })),
 )

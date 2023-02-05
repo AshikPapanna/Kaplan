@@ -18,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import{MatInputModule} from '@angular/material/input'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 
 @NgModule({
   declarations: [BooksComponent, BookListComponent, BookCardComponent, DetailsComponent, AllBooksComponent, FavoriteBooksComponent],
@@ -29,6 +30,7 @@ import{MatInputModule} from '@angular/material/input'
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     StoreModule.forFeature(bookFeatureKey, bookReducer),
     EffectsModule.forFeature([BooksEffects])
   ],

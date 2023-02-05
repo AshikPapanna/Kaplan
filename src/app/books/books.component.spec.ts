@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BooksComponent } from './books.component';
 import { provideMockStore, MockStore } from '@ngrx/store/testing';
 import { HeaderComponent } from '../shared/components/header/header.component';
-import { RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import {  MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 describe('BooksComponent', () => {
   let component: BooksComponent;
   let fixture: ComponentFixture<BooksComponent>;
@@ -14,7 +14,7 @@ describe('BooksComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ BooksComponent,HeaderComponent ],
-      imports:[RouterTestingModule],
+      imports:[RouterTestingModule,MatSnackBarModule],
       providers:[
         provideMockStore({ initialState }),
       ]

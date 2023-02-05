@@ -13,7 +13,7 @@ export class BooksEffects {
       exhaustMap(() =>
         this.bookService.getBooks().pipe(
           switchMap((res: any) =>( [BookActions.addBooks({ books: res.items }),BookActions.addTotal({ count: +res.totalItems })])),
-          catchError((error) => EMPTY),
+          catchError(async (error) => BookActions.addError({message:"No Books found",status:error.status})),
         ),
       ),
     ),
